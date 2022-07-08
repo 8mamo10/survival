@@ -8,6 +8,10 @@ function blockTime(timeout) {
   }
 }
 
-console.log("start");
-blockTime(1000);
-console.log("this line is blocked");
+console.log("1");
+setTimeout(() => {
+  console.log("3");
+  blockTime(1000);
+  console.log("4");
+}, 10);
+console.log("2");
