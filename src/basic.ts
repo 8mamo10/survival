@@ -1,4 +1,4 @@
-const message = "Hello World!";
+let message = "Hello World!";
 message.toLowerCase();
 //message();
 
@@ -14,3 +14,8 @@ function greet(person: string, date: Date) {
 }
 
 greet("Brendan", new Date());
+
+const names = ["Alice", "Bob", "Eve"];
+names.forEach((s) => {
+  console.log(s.toUpperCase());
+});
